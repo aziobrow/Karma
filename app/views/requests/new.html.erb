@@ -1,0 +1,16 @@
+<h1> Need Help </h1>
+ <%=form_for @request do |t| %>
+ <%= t.label :title %>
+ <%= t.text_field :title %>
+ <%= t.label :description %>
+ <%= t.text_area :description %>
+ <%= t.label :location %>
+ <%= t.text_field :location %>
+ <%= t.label :servicedate %>
+ <%= t.date_field :servicedate %>
+ <%= t.label :karmapoints %>
+ <%= t.text_field :karmapoints %>
+ <%= t.label :urgency %>
+ <%= t.text_field :urgency %>
+ <%= t.submit "Ask For Help" %>
+ <%end %>
