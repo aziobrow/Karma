@@ -6,6 +6,6 @@ Sort By:
 
 
 <% @requests.each do |request| %>
-  <h3><%= request.title %></h3>
+  <h3><%= link_to request.title, request_path(request) %></h3>
   <%= request.location %>
 <% end %><hr>

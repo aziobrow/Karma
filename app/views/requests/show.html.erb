@@ -1,6 +1,10 @@
-<h1><%= @request.title %></h1>
+<h1> Help <%= @request.user.name %>!! </h1>
 
-<h3><%= @request.description %></h3></br></br>
+<%= image_tag(@request.user.image_url, size: "200") %>
+
+<h3><%= @request.title %></h3>
+
+<h5><%= @request.description %></h5></br></br>
 Location: <%= @request.location %></br>
 Date Service is Requested<%= @request.servicedate %></br>
 Estimated Time: <%= @request.duration %></br>
