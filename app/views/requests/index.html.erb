@@ -1,0 +1,11 @@
+<h1> Give Help </h1>
+
+Sort By:
+<%= select_tag "Sort By", "<option>Distance</option>
+  KarmaPoints</option><option>Urgency</option>".html_safe %>
+
+
+<% @requests.each do |request| %>
+  <h3><%= request.title %></h3>
+  <%= request.location %>
+<% end %><hr>
