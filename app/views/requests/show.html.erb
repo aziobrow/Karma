@@ -10,4 +10,6 @@ Date Service is Requested<%= @request.servicedate %></br>
 Estimated Time: <%= @request.duration %></br>
 KarmaPoints: <%= @request.karmapoints %></br>
 Urgency: <%= @request.urgency %></br>
-Request Posted At: <%= @request.created_at %></br>
+Request Posted At: <%= @request.created_at %></br></br>
+
+<%= button_to "Offer Help to #{@request.user.name}", requests_path %>
